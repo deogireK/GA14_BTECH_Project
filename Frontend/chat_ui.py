@@ -7,7 +7,7 @@ import pytz
 def display_chat_interface():
     # Get persistent session ID from main app
     session_id = st.session_state.get("current_session", "default_session")
-    CHAT_API_URL = st.session_state.get("API_URL", "https://ga14-btech-project.onrender.com")
+    CHAT_API_URL = st.session_state.get("API_URL", "http://127.0.0.1:5000")
     
     # Session-specific message storage
     message_key = f"messages_{session_id}"
