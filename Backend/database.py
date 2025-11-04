@@ -7,8 +7,7 @@ import certifi
 from pymongo import MongoClient
 from datetime import datetime
 
-client = MongoClient("mongodb+srv://deogire:%245kinhand@cluster0.6ohtl.mongodb.net/brain_cancer_chatbot?retryWrites=true&w=majority&authSource=admin&appName=Cluster0",
-                     tlsCAFile=certifi.where())
+client = MongoClient("",tlsCAFile=certifi.where())
 
 db = client["brain_cancer_chatbot"]
 
